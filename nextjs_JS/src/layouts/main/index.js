@@ -2,9 +2,10 @@ import PropTypes from 'prop-types';
 // next
 import { useRouter } from 'next/router';
 // @mui
-import { Box, Link, Container, Typography, Stack } from '@mui/material';
+import { Box, Link, Container, Grid, Typography, Stack } from '@mui/material';
 // components
 import Logo from '../../components/Logo';
+import Label from '../../components/Label';
 //
 import MainFooter from './MainFooter';
 import MainHeader from './MainHeader';
@@ -40,13 +41,16 @@ export default function MainLayout({ children }) {
           }}
         >
           <Container>
-            <Logo sx={{ mb: 1, mx: 'auto' }} />
-
-            <Typography variant="caption" component="p">
-              © All rights reserved
-              <br /> made by &nbsp;
-              <Link href="https://minimals.cc/">minimals.cc</Link>
-            </Typography>
+            <Grid spacing={0} direction="row" alignItems="center" justifyContent="center" container>
+              <Grid item xs={0}>
+                <Logo sx={{ mb: 0, mx: 'auto' }} />
+              </Grid>
+              <Grid item xs={0}>
+              <Label color="info" sx={{ ml: 1 }}>
+           Meenagopal24.me
+          </Label>
+              </Grid>
+            </Grid>
           </Container>
         </Box>
       )}

@@ -59,6 +59,9 @@ import NotistackProvider from '../components/NotistackProvider';
 import ThemeLocalization from '../components/ThemeLocalization';
 import MotionLazyContainer from '../components/animate/MotionLazyContainer';
 
+//maintainace
+import Maintenance from './maintenance';
+
 // Check our docs
 // https://docs-minimals.vercel.app/authentication/ts-version
 
@@ -79,7 +82,10 @@ export default function MyApp(props) {
   const { Component, pageProps, settings } = props;
 
   const getLayout = Component.getLayout ?? ((page) => page);
-
+  // let x = 'true'
+  // if (x === 'true') {
+  //   // return <Maintenance />;
+  // }
   return (
     <>
       <Head>
@@ -99,7 +105,7 @@ export default function MyApp(props) {
                           <ThemeLocalization>
                             <RtlLayout>
                               <ChartStyle />
-                              <Settings />
+                              {/* <Settings /> */}
                               <ProgressBar />
                               {getLayout(<Component {...pageProps} />)}
                             </RtlLayout>

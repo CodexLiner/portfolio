@@ -76,7 +76,7 @@ export default function HomeAdvertisement() {
                 '&:hover': { bgcolor: 'grey.300' },
               }}
             >
-              GO TO GITHUB
+              OPEN GITHUB
             </Button>
           </m.div>
         </Box>

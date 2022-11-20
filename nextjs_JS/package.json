@@ -10,7 +10,8 @@
     "lint:fix": "eslint --fix --ext .js,.jsx .",
     "dev": "next dev -p 3031",
     "build": "next build",
-    "start": "next start"
+    "start1": "next start",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.19.3",

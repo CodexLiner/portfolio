@@ -43,10 +43,10 @@ export default function HomePage() {
       <RootStyle>
         <HomeHero />
         <ContentStyle>
+          {/* recent project */}
           <HomeMinimal />
 
           <HomeHugePackElements />
-          
 
           <HomeDarkMode />
 

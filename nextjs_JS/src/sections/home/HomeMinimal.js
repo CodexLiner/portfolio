@@ -7,7 +7,7 @@ import Image from '../../components/Image';
 import { MotionViewport, varFade } from '../../components/animate';
 
 // ----------------------------------------------------------------------
-
+// project sample should look like this
 const CARDS = [
   {
     icon: 'https://minimal-assets-api.vercel.app/assets/icons/ic_design.svg',

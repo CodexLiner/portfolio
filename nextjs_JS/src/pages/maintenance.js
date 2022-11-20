@@ -34,7 +34,7 @@ export default function Maintenance() {
 
           <NextLink href="/">
             <Button size="large" variant="contained">
-              Go to Home
+              Sorry For inconvenience
             </Button>
           </NextLink>
         </Container>
