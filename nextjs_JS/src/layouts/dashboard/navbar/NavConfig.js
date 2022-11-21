@@ -26,25 +26,25 @@ const ICONS = {
 const navConfig = [
   // GENERAL
   // ----------------------------------------------------------------------
-  {
-    subheader: 'general',
-    items: [
-      {
-        title: 'app',
-        path: PATH_DASHBOARD.general.app,
-        icon: ICONS.dashboard,
-      },
-      { title: 'e-commerce', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
-      { title: 'analytics', path: PATH_DASHBOARD.general.analytics, icon: ICONS.analytics },
-      { title: 'banking', path: PATH_DASHBOARD.general.banking, icon: ICONS.banking },
-      { title: 'booking', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
-    ],
-  },
+  // {
+  //   subheader: 'general Genral Basic',
+  //   items: [
+  //     {
+  //       title: 'app',
+  //       path: PATH_DASHBOARD.general.app,
+  //       icon: ICONS.dashboard,
+  //     },
+  //     { title: 'e-commerce', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
+  //     { title: 'analytics', path: PATH_DASHBOARD.general.analytics, icon: ICONS.analytics },
+  //     { title: 'banking', path: PATH_DASHBOARD.general.banking, icon: ICONS.banking },
+  //     { title: 'booking', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
+  //   ],
+  // },
 
   // MANAGEMENT
   // ----------------------------------------------------------------------
   {
-    subheader: 'management',
+    subheader: 'Genral',
     items: [
       // MANAGEMENT : USER
       {
@@ -52,12 +52,12 @@ const navConfig = [
         path: PATH_DASHBOARD.user.root,
         icon: ICONS.user,
         children: [
-          { title: 'profile', path: PATH_DASHBOARD.user.profile },
-          { title: 'cards', path: PATH_DASHBOARD.user.cards },
-          { title: 'list', path: PATH_DASHBOARD.user.list },
-          { title: 'create', path: PATH_DASHBOARD.user.newUser },
-          { title: 'edit', path: PATH_DASHBOARD.user.editById },
-          { title: 'account', path: PATH_DASHBOARD.user.account },
+          { title: 'Profile', path: PATH_DASHBOARD.user.profile },
+          { title: 'Education', path: PATH_DASHBOARD.user.cards },
+          { title: 'Projects', path: PATH_DASHBOARD.user.list },
+          { title: 'Experience', path: PATH_DASHBOARD.user.newUser },
+          { title: 'Technolgies', path: PATH_DASHBOARD.user.editById },
+          { title: 'About', path: PATH_DASHBOARD.user.account },
         ],
       },
 
