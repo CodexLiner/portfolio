@@ -10,14 +10,14 @@ import Image from '../../components/Image';
 import Iconify from '../../components/Iconify';
 import TextIconLabel from '../../components/TextIconLabel';
 import { MotionContainer, varFade } from '../../components/animate';
-import {BackgroundAnimation} from '../../components/animate/BackgroundAnimation' 
+import BackgroundAnimation from '../../components/animate/BackgroundAnimation';
 
 // ----------------------------------------------------------------------
 
 const RootStyle = styled(m.div)(({ theme }) => ({
   position: 'relative',
   // backgroundColor: theme.palette.primary[900],
-  backgroundColor : "#0F1626",
+  backgroundColor: '#0F1626',
   [theme.breakpoints.up('md')]: {
     top: 0,
     left: 0,
@@ -72,12 +72,11 @@ export default function HomeHero() {
   return (
     <MotionContainer>
       <RootStyle>
-        <HeroOverlayStyle
+        {/* <HeroOverlayStyle
           alt="overlay"
           src="https://minimal-assets-api.vercel.app/assets/overlay.svg"
           variants={varFade().in}
-        />
-        {/* <BackgroundAnimation/> */}
+        /> */}
 
         <HeroImgStyle
           alt="hero"
@@ -89,17 +88,16 @@ export default function HomeHero() {
           <ContentStyle>
             <m.div variants={varFade().inRight}>
               <Typography variant="h1" sx={{ color: 'common.white' }}>
-               Hey Folks! I Am<br/>
+                Hey Folks! I Am
+                <br />
                 <Typography component="span" variant="h1" sx={{ color: 'primary.main' }}>
-                Gopal Meena
+                  Gopal Meena
                 </Typography>
               </Typography>
             </m.div>
 
             <m.div variants={varFade().inRight}>
-              <Typography sx={{ color: 'common.white' }}>
-                Programmer | Learner | Student
-              </Typography>
+              <Typography sx={{ color: 'common.white' }}>Programmer | Learner | Student</Typography>
             </m.div>
 
             {/* <Stack spacing={2.5} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
@@ -157,7 +155,7 @@ export default function HomeHero() {
                   variant="contained"
                   startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
                 >
-                 Download Resume
+                  Download Resume
                 </Button>
               </NextLink>
             </m.div>

@@ -24,13 +24,13 @@ export default function NavbarDocs() {
           Hi, {user?.displayName}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Need help?
-          <br /> Please check our docs
+         How Are You ?
+          <br /> Today
         </Typography>
       </div>
 
       <Button href={PATH_DOCS} target="_blank" rel="noopener" variant="contained">
-        Documentation
+        Visit Home Page
       </Button>
     </Stack>
   );

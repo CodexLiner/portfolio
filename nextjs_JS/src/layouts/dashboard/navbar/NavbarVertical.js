@@ -76,8 +76,8 @@ export default function NavbarVertical({ isOpenSidebar, onCloseSidebar }) {
       >
         <Stack direction="row" alignItems="center" justifyContent="space-between">
           <Logo />
-
-          {isDesktop && !isCollapse && (
+          {/* use isCollapse for collapssing */}
+          {isDesktop && !true && (
             <CollapseButton onToggleCollapse={onToggleCollapse} collapseClick={collapseClick} />
           )}
         </Stack>
